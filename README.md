@@ -1,3 +1,3 @@
 # Life_Cycle_Assesment_Simulator
 
-Develped By Felipe A. Mes N. - cantgetpastmesa
+Developed By Felipe A. Mesa N. - https://github.com/cantgetpastmesa
