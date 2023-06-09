@@ -1,10 +1,10 @@
 """
+ * Developed by Felipe A. Mesa N, Olga P. Fuentes, Johann F. Osma.
+ * Universidad de los Andes. Reaserch Group CMUA. B10MICROSYSTEMS.
+ *
+ * These project is based on a template
  * Copyright 2020, Departamento de sistemas y Computación,
  * Universidad de Los Andes
- *
- *
- * Desarrolado para el curso ISIS1225 - Estructuras de Datos y Algoritmos
- *
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,9 +19,9 @@
  * You should have received a copy of the GNU General Public License
  * along withthis program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * Contribuciones:
+ * Contributions:
  *
- * Dario Correal - Version inicial
+ * Dario Correal - Inicial version.
  """
 
 
