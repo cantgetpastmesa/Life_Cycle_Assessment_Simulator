@@ -47,15 +47,15 @@ def new_controller():
     """
         Se crea una instancia del controlador
     """
-    #TODO: Llamar la función del controlador donde se crean las estructuras de datos
-    pass
+    control = controller.new_controller()
+    return control
 
 
-def print_menu():
+def print_menu_esp():
     print("Bienvenido")
     print("1- Cargar información")
-    print("2- Ejecutar Requerimiento 1")
-    print("3- Ejecutar Requerimiento 2")
+    print("2- Mostrar información de los archivos")
+    print("3- Añadir información a los archivos")
     print("4- Ejecutar Requerimiento 3")
     print("5- Ejecutar Requerimiento 4")
     print("6- Ejecutar Requerimiento 5")
@@ -63,6 +63,20 @@ def print_menu():
     print("8- Ejecutar Requerimiento 7")
     print("9- Ejecutar Requerimiento 8")
     print("0- Salir")
+    
+def print_menu_eng():
+    print("Welcome")
+    print("1- Load data from files")
+    print("2- Show file data")
+    print("3- Add data to files")
+    print("4- Ejecutar Requerimiento 3")
+    print("5- Ejecutar Requerimiento 4")
+    print("6- Ejecutar Requerimiento 5")
+    print("7- Ejecutar Requerimiento 6")
+    print("8- Ejecutar Requerimiento 7")
+    print("9- Ejecutar Requerimiento 8")
+    print("0- Exit")
+
 
 
 def load_data(control):
@@ -80,66 +94,98 @@ def print_data(control, id):
     #TODO: Realizar la función para imprimir un elemento
     pass
 
-def print_req_1(control):
+def print_req_1(control, language):
     """
         Función que imprime la solución del Requerimiento 1 en consola
     """
+    if language == 2:
+        msg = ""
+    else: 
+        msg = ""
     # TODO: Imprimir el resultado del requerimiento 1
     pass
 
 
-def print_req_2(control):
+def print_req_2(control, language):
     """
         Función que imprime la solución del Requerimiento 2 en consola
     """
+    if language == 2:
+        msg = ""
+    else: 
+        msg = ""
     # TODO: Imprimir el resultado del requerimiento 2
     pass
 
 
-def print_req_3(control):
+def print_req_3(control, language):
     """
         Función que imprime la solución del Requerimiento 3 en consola
     """
+    if language == 2:
+        msg = ""
+    else: 
+        msg = ""
     # TODO: Imprimir el resultado del requerimiento 3
     pass
 
 
-def print_req_4(control):
+def print_req_4(control, language):
     """
         Función que imprime la solución del Requerimiento 4 en consola
     """
+    if language == 2:
+        msg = ""
+    else: 
+        msg = ""
     # TODO: Imprimir el resultado del requerimiento 4
     pass
 
 
-def print_req_5(control):
+def print_req_5(control, language):
     """
         Función que imprime la solución del Requerimiento 5 en consola
     """
+    if language == 2:
+        msg = ""
+    else: 
+        msg = ""
     # TODO: Imprimir el resultado del requerimiento 5
     pass
 
 
-def print_req_6(control):
+def print_req_6(control, language):
     """
         Función que imprime la solución del Requerimiento 6 en consola
     """
+    if language == 2:
+        msg = ""
+    else: 
+        msg = ""
     # TODO: Imprimir el resultado del requerimiento 6
     pass
 
 
-def print_req_7(control):
+def print_req_7(control, language):
     """
         Función que imprime la solución del Requerimiento 7 en consola
     """
+    if language == 2:
+        msg = ""
+    else: 
+        msg = ""
     # TODO: Imprimir el resultado del requerimiento 7
     pass
 
 
-def print_req_8(control):
+def print_req_8(control, language):
     """
         Función que imprime la solución del Requerimiento 8 en consola
     """
+    if language == 2:
+        msg = ""
+    else: 
+        msg = ""
     # TODO: Imprimir el resultado del requerimiento 8
     pass
 
@@ -153,44 +199,60 @@ if __name__ == "__main__":
     Menu principal
     """
     working = True
+    print("SELECT LANGUAGE/SELECCIONE EL IDIOMA")
+    language = int(input("TYPE 1 FOR ENGLISH, PRESIONE 2 PARA ESPAÑOL\n>"))
+    
     #ciclo del menu
     while working:
-        print_menu()
-        inputs = input('Seleccione una opción para continuar\n')
+        if language == 2:
+             print_menu_esp()
+             inputs = input('Seleccione una opción para continuar\n>')
+        else:
+            print_menu_eng()
+            inputs = input('Select an option to continue\n>')
         try:
             if int(inputs) == 1:
-                print("Cargando información de los archivos ....\n")
+                if language == 2:
+                    print("Cargando información de los archivos ...\n")
+                else: 
+                    print("Loading data from files ...\n")
                 data = load_data(control)
             elif int(inputs) == 2:
-                print_req_1(control)
+                print_req_1(control, language)
 
             elif int(inputs) == 3:
-                print_req_2(control)
+                print_req_2(control, language)
 
             elif int(inputs) == 4:
-                print_req_3(control)
+                print_req_3(control, language)
 
             elif int(inputs) == 5:
-                print_req_4(control)
+                print_req_4(control, language)
 
             elif int(inputs) == 6:
-                print_req_5(control)
+                print_req_5(control, language)
 
             elif int(inputs) == 7:
-                print_req_6(control)
+                print_req_6(control, language)
 
             elif int(inputs) == 8:
-                print_req_7(control)
+                print_req_7(control, language)
 
             elif int(inputs) == 9:
-                print_req_8(control)
+                print_req_8(control, language)
 
             elif int(inputs) == 0:
                 working = False
-                print("\nGracias por utilizar el programa")
+                if language == 2:
+                    print("\nGracias por utilizar el programa.")
+                else:
+                    print("\nThan you for using this software.")
                 
             else:
-                print("Opción errónea, vuelva a elegir.\n")
+                if language == 2:
+                    print("Opción errónea, vuelva a elegir.\n")
+                else:
+                    print("Option not available, choose or type again.\n")
         except Exception as exp:
             print("ERR:", exp)
             traceback.print_exc()

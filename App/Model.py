@@ -62,7 +62,18 @@ def new_data_structs():
     manera vacía para posteriormente almacenar la información.
     """
     #TODO: Inicializar las estructuras de datos
-    pass
+    
+    data_structures = {"REAGEANTS": None,
+                       "EQUIPMENT": None,
+                       "ENERGY_SOURCES": None,
+                       "WATER_CONSUMPTION": None}
+    
+    data_structures["REAGEANTS"] = mp.newMap(numelements=100)
+    data_structures["EQUIPMENT"] = mp.newMap(numelements=50)
+    data_structures["ENERGY_SOURCES"] = mp.newMap(numelements=10)
+    data_structures["WATER_CONSUMPTION"] = mp.newMap(numelements=10)
+    
+    return data_structures
 
 
 # Funciones para agregar informacion al modelo
@@ -82,6 +93,9 @@ def new_data(id, info):
     Crea una nueva estructura para modelar los datos
     """
     #TODO: Crear la función para estructurar los datos
+    pass
+
+def data_cleaner():
     pass
 
 
