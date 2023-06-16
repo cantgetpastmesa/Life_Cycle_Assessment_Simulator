@@ -30,9 +30,10 @@ from DISClib.ADT import queue as qu
 from DISClib.ADT import map as mp
 from DISClib.DataStructures import mapentry as me
 assert cf
+import traceback
 from tabulate import tabulate
 from matplotlib import pyplot as plt
-import traceback
+import numpy
 import pyfiglet as dt
 
 """

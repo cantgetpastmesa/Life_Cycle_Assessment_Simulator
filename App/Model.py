@@ -85,6 +85,18 @@ def add_data(data_structs, data):
     #TODO: Crear la función para agregar elementos a una lista
     pass
 
+def add_reagent(data_structs, data):
+    pass
+
+def add_equipment(data_structs, data):
+    pass
+
+def add_energy_source(data_structs, data):
+    pass
+
+def add_water_type(data_structs, data):
+    pass
+
 
 # Funciones para creacion de datos
 
