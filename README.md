@@ -1,4 +1,4 @@
-# Life_Cycle_Assesment_Simulator
+# Life Cycle Assesment Simulator
 
 ADD PROJECT DESCRIPTION
 
@@ -9,6 +9,7 @@ Developed by:
 For Universidad de los Andes. Reaserch Group CMUA. B10MICROSYSTEMS
 
 This project was developed on top of an open source template owned by https://github.com/ISIS1225DEVS 
+
 The link to this template: https://github.com/ISIS1225DEVS/Reto4-Template.git
 
 In order to properly use this software, your machine has to be able to run a recent version of Python and have installed the following libraries.
