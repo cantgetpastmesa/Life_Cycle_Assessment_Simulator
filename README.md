@@ -15,25 +15,11 @@ INSTRUCTIONS:
 In order to properly use this software, you first need to make sure you have downloaded the following libraries:
 1. MatPlotLib
 2. Tabulate
-3. Pyfiglet
-To check if you have these, run the following command in your terminal:
-    
-    pip list
 
 If your computer does not have them installed, run the following commands:
 
-    To update pip (Python installer):
-
         pip3 install --upgrade pip
 
-    To downlaod MatPlotLib:
-
-        pip3 install matplotlib
-
-    To downlaod Tabulate:
+        pip3 install matplotli
 
         pip3 install tabulate
-
-    To downlaod Pyfiglet:
-
-        pip3 install pyfiglet
