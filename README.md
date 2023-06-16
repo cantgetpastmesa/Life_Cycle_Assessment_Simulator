@@ -3,9 +3,9 @@
 ADD PROJECT DESCRIPTION
 
 Developed by: 
-1. Felipe A. Mesa N. - https://github.com/cantgetpastmesa
-2. 
-3. 
+1. Felipe A. Mesa N. - f.mesan@uniandes.edu.co - https://github.com/cantgetpastmesa  
+2. Olga P. Fuentes - op.fuentes@uniandes.edu.co - 
+3. Johann F. Osma - jf.osma43@uniandes.edu.co - 
 For Universidad de los Andes. Reaserch Group CMUA. B10MICROSYSTEMS
 
 This project was developed on top of an open source template owned by https://github.com/ISIS1225DEVS 
