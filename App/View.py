@@ -84,7 +84,7 @@ def load_data(control):
     """
     Carga los datos
     """
-    #TODO: Realizar la carga de datos
+    controller.load_data(control)
     pass
 
 
@@ -206,8 +206,8 @@ if __name__ == "__main__":
     #ciclo del menu
     while working:
         if language == 2:
-             print_menu_esp()
-             inputs = input('Seleccione una opción para continuar\n>')
+            print_menu_esp()
+            inputs = input('Seleccione una opción para continuar\n>')
         else:
             print_menu_eng()
             inputs = input('Select an option to continue\n>')

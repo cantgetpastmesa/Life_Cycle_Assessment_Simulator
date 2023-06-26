@@ -41,34 +41,35 @@ def new_controller():
 
 # Funciones para la carga de datos
 
-def open_files():
-    reagents = csv.DictReader(open("Data/reagents.csv", encoding='utf-8'))
-    water_consumption = csv.DictReader(open("Data/water_consumption.csv", encoding='utf-8'))
-    energy_sources = csv.DictReader(open("Data/energy_sources.csv", encoding='utf-8'))
-    equipment = csv.DictReader(open("Data/equipment.csv", encoding='utf-8'))
+#def open_files():
+ #   reagents = csv.DictReader(open("Data/reagents.csv", encoding='utf-8'))
+  #  water_consumption = csv.DictReader(open("Data/water_consumption.csv", encoding='utf-8'))
+   # energy_sources = csv.DictReader(open("Data/energy_sources.csv", encoding='utf-8'))
+    #equipment = csv.DictReader(open("Data/equipment.csv", encoding='utf-8'))
+    #
+    #files = (reagents, equipment, energy_sources, water_consumption)
+    #return files
     
-    files = (reagents, equipment, energy_sources, water_consumption)
-    return files
+def open_file_reader(filename):
+    file = csv.DictReader(open(filename, encoding='utf-8'))
+    return file
+
+def open_file_write(filename):
+    file = open(filename, encoding='utf-8', mode="a")
+    return file
 
 def load_data(control, files):
     """
     Carga los datos del reto
     """
-    # Podría hacer toda la carga de una, menos líneas de código pero necesita saber 
-        # a qué archivo accede para guardarlo en su mapa (NO VA POR TIPO DE DATO)
-    for file in files:
-        for data in file:
-            model.add_data(control, data, file)
-    
-    #Hace la carga por archivo... lo más fácil por ahora PROBABLY GO TO (cada tipo de dato requiere una función)
     for reagent in files[0]:
-        model.add_reagent(reagent)
+        model.add_reagent(control, reagent)
     for equipment_device in files[1]:
-        model.add_equipment(equipment_device)
+        model.add_equipment(control, equipment_device)
     for energy_source in files[2]:
-        model.add_energy_source(energy_source)
+        model.add_energy_source(control, energy_source)
     for water_type in files[3]:
-        model.add_water_type(water_type)
+        model.add_water_type(control, water_type)
     pass
 
 

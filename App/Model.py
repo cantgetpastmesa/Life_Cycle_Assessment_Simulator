@@ -86,15 +86,19 @@ def add_data(data_structs, data):
     pass
 
 def add_reagent(data_structs, data):
+    reagents_map = data_structs["REAGEANTS"]
     pass
 
 def add_equipment(data_structs, data):
+    equipment_map = data_structs["EQUIPMENT"]
     pass
 
 def add_energy_source(data_structs, data):
+    energy_sources_map = data_structs["ENERGY_SOURCES"]
     pass
 
 def add_water_type(data_structs, data):
+    water_type_map = data_structs["WATER_CONSUMPTION"]
     pass
 
 

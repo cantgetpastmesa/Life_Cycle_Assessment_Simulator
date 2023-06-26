@@ -13,7 +13,7 @@ This project was developed on top of an open source template owned by https://gi
 
 The link to the template: https://github.com/ISIS1225DEVS/Reto4-Template.git
 
-In order to properly use this software, your machine has to run a recent version of Python and have installed the following libraries.
+In order to properly use this software, your machine has to run a recent version of Python and have installed the following libraries:
 1. MatPlotLib
 2. NumPy
 3. Tabulate
