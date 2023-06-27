@@ -78,13 +78,6 @@ def new_data_structs():
 
 # Funciones para agregar informacion al modelo
 
-def add_data(data_structs, data):
-    """
-    Función para agregar nuevos elementos a la lista
-    """
-    #TODO: Crear la función para agregar elementos a una lista
-    pass
-
 def add_reagent(data_structs, data):
     reagents_map = data_structs["REAGEANTS"]
     pass
@@ -133,7 +126,7 @@ def data_size(data_structs):
     pass
 
 
-def req_1(data_structs):
+def show_data(data_structs):
     """
     Función que soluciona el requerimiento 1
     """
@@ -141,7 +134,7 @@ def req_1(data_structs):
     pass
 
 
-def req_2(data_structs):
+def add_data(data_structs):
     """
     Función que soluciona el requerimiento 2
     """

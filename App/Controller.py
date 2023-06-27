@@ -72,6 +72,12 @@ def load_data(control, files):
         model.add_water_type(control, water_type)
     pass
 
+def show_data():
+    pass
+
+def add_data():
+    pass
+
 
 # Funciones de ordenamiento
 

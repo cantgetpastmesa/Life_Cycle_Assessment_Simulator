@@ -87,35 +87,58 @@ def load_data(control):
     controller.load_data(control)
     pass
 
-
-def print_data(control, id):
-    """
-        Función que imprime un dato dado su ID
-    """
-    #TODO: Realizar la función para imprimir un elemento
-    pass
-
-def print_req_1(control, language):
+def print_show_data(control, language):
     """
         Función que imprime la solución del Requerimiento 1 en consola
     """
     if language == 2:
-        msg = ""
+        msg = "Imprimiendo información de los archivos...\n"
     else: 
-        msg = ""
-    # TODO: Imprimir el resultado del requerimiento 1
+        msg = "Printing all files..."
+    #llamar función que imprime los archivos
     pass
 
 
-def print_req_2(control, language):
+def print_add_data(control, language):
     """
         Función que imprime la solución del Requerimiento 2 en consola
     """
+    #METER ESTA FUNCIÓN ENTERA EN UN WHILE PARA UNA MEJOR EXPERIENCIA DE USUARIO
     if language == 2:
-        msg = ""
+        msg_1 = """
+        ARCHIVOS DISPONIBLES:
+        (1)-> reagents.csv (REACTIVOS)
+        (2)-> equipment.csv (EQUIPOS DE LABORATORIO)
+        (3)-> energy_sources.csv (FUENTES DE ENERGÍA)
+        (4)-> water_consumption.csv (CONSUMO Y TIPOS DE AGUA)
+        """
+        msg_2 = "Seleccione el archivo al que quiere añadir información:\n>"
+        msg_3 = "IMPORTANTE: Para que la información que registró sea utilizada, debe volver a cargar la información al programa."
+        #IMPRIMIR ESTO DE AQUÍ ARRIBA EN COLOR 
     else: 
-        msg = ""
-    # TODO: Imprimir el resultado del requerimiento 2
+        msg_1 = """
+        AVAILABLE FILES:
+        (1)-> reagents.csv (REAGENTS)
+        (2)-> equipment.csv (LAB EQUIPMENT)
+        (3)-> energy_sources.csv (ENERGY SOURCES)
+        (4)-> water_consumption.csv (WATER CONSUMPTION AND TYPES)
+        """
+        msg_2 = "Select the file you want to add data to:\n>"
+    print(msg_1)
+    file = int(input(msg_2))
+    if file == 1:
+        pass #llamar función de inputs para añadir datos a reagents.csv (USAR WHILES PARA METER DATOS)
+    elif file == 2:
+        pass #llamar función de inputs para añadir datos a equipment.csv (USAR WHILES PARA METER DATOS)
+    elif file == 3:
+        pass #llamar función de inputs para añadir datos a energy_sources.csv (USAR WHILES PARA METER DATOS)
+    elif file == 4:
+        pass #llamar función de inputs para añadir datos a water_consumption.csv (USAR WHILES PARA METER DATOS)
+    else:
+        if language == 2:
+            print("Opción errónea, vuelva a elegir.\n")
+        else:
+            print("Option not available, choose or type again.\n")
     pass
 
 
@@ -219,10 +242,10 @@ if __name__ == "__main__":
                     print("Loading data from files ...\n")
                 data = load_data(control)
             elif int(inputs) == 2:
-                print_req_1(control, language)
+                print_show_data(control, language)
 
             elif int(inputs) == 3:
-                print_req_2(control, language)
+                print_add_data(control, language)
 
             elif int(inputs) == 4:
                 print_req_3(control, language)
