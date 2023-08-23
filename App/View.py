@@ -213,6 +213,10 @@ def print_req_8(control, language):
     # TODO: Imprimir el resultado del requerimiento 8
     pass
 
+#mensajes de terminal 
+#text = pyfiglet.figlet_format("B1O\nMICRO\nSYSTEMS", "computer",justify="center")
+#correr esto en la terminal y coger ese texto para printearlo
+
 
 # Se crea el controlador asociado a la vista
 control = new_controller()
